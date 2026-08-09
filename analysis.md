@@ -64,7 +64,7 @@ Mostra o endereço IP de origem (192.168.56.20) e a porta utilizada na tentativa
 
 ### Evidência 03 - Repetição das falhas
 
-![Evidência 03](evidencias/evidence-03-event-4625-multiple.png)
+![Evidência 03](evidencias/evidence-03-multiple-4625-events)
 
 Mostra vários eventos 4625 registrados em sequência durante os testes.
 
