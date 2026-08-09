@@ -1,18 +1,18 @@
 # Análise de Evento 4625 - Falha de Autenticação
 
-## 1. Objetivo
+## Objetivo
 
-Investigar eventos de falha de autenticação registrados no Windows e identificar a origem e as características das tentativas de acesso.
+Investigar falhas de autenticação registradas no Windows e identificar de onde partiram as tentativas de acesso.
 
-## 2. Ambiente
+## Ambiente
 
 - Sistema analisado: Windows 7
-- Máquina de análise: Kali Linux
+- Máquina utilizada nos testes: Kali Linux
 - Rede: 192.168.56.0/24
 - IP do Windows: 192.168.56.10
 - IP do Kali: 192.168.56.20
 
-## 3. Evento identificado
+## Evento identificado
 
 - Event ID: 4625
 - Tipo: Falha de autenticação
@@ -22,38 +22,40 @@ Investigar eventos de falha de autenticação registrados no Windows e identific
 - Workstation: KALI
 - IP de origem: 192.168.56.20
 
-## 4. Análise
+## Análise
 
-O evento 4625 indica que uma tentativa de autenticação falhou.
+O Event ID 4625 é registrado quando uma tentativa de autenticação falha.
 
-A origem identificada foi a máquina Kali Linux, através do endereço IP 192.168.56.20.
+Durante os testes, as tentativas partiram da máquina Kali Linux, utilizando o endereço IP 192.168.56.20.
 
-O Logon Type 3 indica uma tentativa de logon através da rede.
+O Logon Type 3 indica que a tentativa de logon ocorreu através da rede.
 
-O uso do protocolo NTLM também foi identificado no evento.
+O evento também mostra o uso do NTLM como pacote de autenticação.
 
-Foram observadas múltiplas falhas de autenticação durante os testes controlados realizados no laboratório.
+Foram identificadas várias falhas de autenticação durante os testes realizados no laboratório.
 
-## 5. Evidências
+## Evidências
 
 ### Evidência 01 - Detalhes do evento
 
-![Event 4625](evidencias/evidence-01-event-4625-details.png)
+![Detalhes do evento](evidencias/evidence-01-event-4625-details.png)
 
 ### Evidência 02 - Origem da tentativa
 
-![Origem](evidencias/evidence-02-event-4625-source.png)
+![Origem da tentativa](evidencias/evidence-02-event-4625-source.png)
 
-## 6. Conclusão
+## Resultado
 
-Os eventos analisados demonstram tentativas de autenticação malsucedidas originadas da máquina Kali Linux contra o Windows 7.
+Os eventos analisados mostram tentativas de autenticação malsucedidas originadas da máquina Kali Linux contra o Windows 7.
 
-O comportamento foi reproduzido em ambiente de laboratório controlado para fins de estudo e análise de segurança.
+Os testes foram realizados de forma controlada em um ambiente de laboratório, permitindo observar como o Windows registra essas tentativas no log de Segurança.
 
-## 7. Recomendações
+Até este ponto, as evidências confirmam falhas de autenticação, mas ainda não permitem afirmar que houve um ataque de força bruta.
 
-- Monitorar eventos 4625 recorrentes.
-- Correlacionar IP de origem, usuário e horário.
-- Investigar múltiplas falhas consecutivas de autenticação.
-- Avaliar políticas de bloqueio de contas.
-- Utilizar mecanismos de monitoramento e alertas para identificar padrões anormais.
+## O que poderia ser feito
+
+- Acompanhar a quantidade de eventos 4625 em um determinado período.
+- Comparar os horários das falhas e o IP de origem.
+- Verificar se várias tentativas estão sendo direcionadas ao mesmo usuário.
+- Criar alertas para um número elevado de falhas consecutivas.
+- Avaliar políticas de bloqueio de conta.
