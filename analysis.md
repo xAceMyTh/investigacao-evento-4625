@@ -48,8 +48,6 @@ Foram identificadas várias falhas de autenticação durante os testes realizado
 
 Os eventos analisados mostram tentativas de autenticação malsucedidas originadas da máquina Kali Linux contra o Windows 7.
 
-Os testes foram realizados de forma controlada em um ambiente de laboratório, permitindo observar como o Windows registra essas tentativas no log de Segurança.
-
 Até este ponto, as evidências confirmam falhas de autenticação, mas ainda não permitem afirmar que houve um ataque de força bruta.
 
 ## O que poderia ser feito
