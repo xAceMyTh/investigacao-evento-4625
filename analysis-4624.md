@@ -22,10 +22,15 @@ As primeiras tentativas utilizaram credenciais incorretas e geraram eventos 4625
 A sequência observada foi:
 
 18:35:59 - 4625
+
 18:36:06 - 4625
+
 18:36:11 - 4625
+
 18:36:15 - 4625
+
 18:36:19 - 4625
+
 18:36:29 - 4624
 
 As falhas ocorreram antes do logon bem-sucedido. Como o teste foi realizado no laboratório, foi possível confirmar que o último acesso utilizou as credenciais corretas.
@@ -58,7 +63,7 @@ nmap -p 445 -sV 192.168.56.10
 
 O parâmetro `-sV` faz o Nmap tentar identificar o serviço e sua versão.
 
-Nesse teste, a porta foi identificada como `microsoft-ds`, associada ao serviço SMB do Windows.
+Nesse teste, a porta foi identificada como `microsoft-ds`, indicando o serviço SMB utilizado pelo Windows.
 
 ## Acesso aos compartilhamentos
 
