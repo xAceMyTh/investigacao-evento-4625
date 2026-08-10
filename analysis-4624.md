@@ -26,10 +26,15 @@ Os registros mostram uma sequência de falhas de autenticação seguida por uma 
 A sequência observada foi:
 
 18:35:59 - 4625
+
 18:36:06 - 4625
+
 18:36:11 - 4625
+
 18:36:15 - 4625
+
 18:36:19 - 4625
+
 18:36:29 - 4624
 
 Isso permite relacionar as tentativas realizadas no Kali Linux com os eventos registrados no Windows.
