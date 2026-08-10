@@ -104,33 +104,33 @@ A imagem mostra várias falhas 4625 seguidas por um evento 4624.
 
 O evento mostra o usuário, o tipo de logon, o protocolo de autenticação, a máquina de origem e o endereço IP.
 
-### Evidência 05 - Porta 445
+### Evidência 03 - Porta 445
 
-![Evidência 05 - Porta 445](evidencias/evidence-05-nmap-port-445.png)
+![Evidência 03 - Porta 445](evidencias/evidence-05-nmap-port-445.png)
 
 Mostra a porta TCP 445 aberta no Windows 7.
 
-### Evidência 06 - Identificação do SMB
+### Evidência 04 - Identificação do SMB
 
-![Evidência 06 - Identificação do SMB](evidencias/evidence-06-nmap-p-445-sV.png)
+![Evidência 04 - Identificação do SMB](evidencias/evidence-06-nmap-p-445-sV.png)
 
 Mostra a identificação do serviço SMB realizada pelo Nmap através do parâmetro `-sV`.
 
-### Evidência 07 - Compartilhamentos SMB
+### Evidência 05 - Compartilhamentos SMB
 
-![Evidência 07 - Compartilhamentos SMB](evidencias/evidence-07-smb-shares.png)
+![Evidência 05 - Compartilhamentos SMB](evidencias/evidence-07-smb-shares.png)
 
 Mostra os compartilhamentos disponíveis no Windows, incluindo `Users`.
 
-### Evidência 08 - Diretório do usuário
+### Evidência 06 - Diretório do usuário
 
-![Evidência 08 - Diretório do usuário](evidencias/evidence-08-smb-thiago-directory.png)
+![Evidência 06 - Diretório do usuário](evidencias/evidence-08-smb-thiago-directory.png)
 
 Mostra o acesso ao compartilhamento `Users` e a navegação até o diretório `Thiago`.
 
-### Evidência 09 - Diretório Documents
+### Evidência 07 - Diretório Documents
 
-![Evidência 09 - Diretório do Documents](evidencias/evidence-09-smb-documents-directory.png)
+![Evidência 07 - Diretório do Documents](evidencias/evidence-09-smb-documents-directory.png)
 
 Mostra o acesso à pasta `Documents` e a listagem do conteúdo encontrado.
 
