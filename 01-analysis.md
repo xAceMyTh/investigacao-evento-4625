@@ -5,18 +5,31 @@ Investigar falhas de autenticação registradas no Windows e identificar de onde
 
 ## Ambiente
 Sistema analisado: Windows 7
+
 Máquina utilizada nos testes: Kali Linux
+
 Rede: 192.168.56.0/24
+
 IP do Windows: 192.168.56.10
+
 IP do Kali: 192.168.56.20
+
 Evento identificado
+
 Event ID: 4625
+
 Tipo: Falha de autenticação
+
 Usuário alvo: Thiago
+
 Logon Type: 3
+
 Authentication Package: NTLM
+
 Workstation: KALI
+
 IP de origem: 192.168.56.20
+
 ## Análise
 
 O Event ID 4625 é registrado quando uma tentativa de autenticação falha.
