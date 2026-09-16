@@ -99,13 +99,13 @@ A pasta continha apenas o arquivo `desktop.ini` no momento do teste.
 
 ### Evidência 01 - Sequência de autenticações
 
-![Evidência 01 - Sequência de autenticações](evidencias/evidence-03-multiple-4625-events.png)
+![Evidência 01 - Sequência de autenticações](evidencias/evidence-01-4625-to-4624-sequence.png)
 
 A imagem mostra várias falhas 4625 seguidas por um evento 4624.
 
 ### Evidência 02 - Detalhes do logon
 
-![Evidência 02 - Detalhes do logon](evidencias/evidence-04-event-4625-details.png)
+![Evidência 02 - Detalhes do logon](evidencias/evidence-02-event-4624-details.png)
 
 O evento mostra o usuário, o tipo de logon, o protocolo de autenticação, a máquina de origem e o endereço IP.
 
