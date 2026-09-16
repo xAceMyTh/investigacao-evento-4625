@@ -44,7 +44,7 @@ Várias tentativas consecutivas
 Credencial correta
         ↓
 Event ID 4624
-
+        ↓
 Logon bem-sucedido
         ↓
 Acesso ao compartilhamento SMB
@@ -91,6 +91,11 @@ Durante a investigação, foram observadas várias falhas de autenticação em s
 18:36:19 - Event ID 4625
 18:36:29 - Event ID 4624
 ```
+Essa sequência mostra diversas tentativas com credenciais incorretas seguidas por uma autenticação aceita pelo Windows.
+
+### Evidência - Sequência 4625 para 4624
+
+![Sequência 4625 para 4624](evidencias/evidence-01-4625-to-4624-sequence.png)
 
 ## Análise do Event ID 4624
 
@@ -127,6 +132,20 @@ Primeiro, a porta TCP `445` foi analisada com o Nmap:
 
 ```
 nmap -p 445 192.168.56.10
+```
+
+O parâmetro `-p 445` faz com que o Nmap verifique especificamente a porta TCP `445`, utilizada pelo SMB.
+
+O resultado mostrou que a porta estava aberta.
+
+### Evidência - Porta 445 aberta
+
+![Porta 445 aberta](evidencias/evidence-05-nmap-port-445.png)
+
+Em seguida, foi realizada a identificação do serviço:
+
+```
+nmap -p 445 -sV 192.168.56.10
 ```
 
 ## MITRE ATT&CK
